@@ -6,9 +6,9 @@ for i in numbers:
     for j in range(1, i):
         if i % j == 0:
             count += 1
-    if count < 2:
+    if count == 1:
         primes.append(i)
-    else:
+    elif count > 1:
         not_primes.append(i)
 print('primes: ', primes)
 print('not_primes: ', not_primes)
